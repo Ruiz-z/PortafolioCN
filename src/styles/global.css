@@ -43,3 +43,7 @@ img {
   background-color: var(--bg-primary);
   min-height: 100vh;
 }
+
+html {
+  scroll-behavior: smooth;
+}

@@ -1,10 +1,11 @@
 import Navbar from './components/Navbar'
+import Hero from './components/Hero'
 
 function App(){
   return(
     <div>
-      <Navbar/>
-      <h1>Portafolio de Evidencias CN</h1>
+      <Navbar />
+      <Hero />
     </div>
   )
 }

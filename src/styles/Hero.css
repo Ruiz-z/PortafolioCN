@@ -1,0 +1,88 @@
+/* Sección hero — portada principal */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 60px); /* resta la altura del navbar */
+  padding: 4rem 2rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+/* Institución */
+.hero-institucion {
+  font-size: 13px;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+/* Nombre del estudiante */
+.hero-nombre {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+/* Nombre de la materia */
+.hero-materia {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+/* Datos adicionales en línea */
+.hero-meta {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-separador {
+  color: var(--accent);
+}
+
+/* Botón CTA */
+.hero-btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background-color: var(--accent);
+  color: #0f0f0f;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: var(--radius);
+  transition: background-color 0.2s;
+}
+
+.hero-btn:hover {
+  background-color: var(--accent-hover);
+}
+/* Ícono de scroll animado */
+.hero-scroll {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  color: var(--text-secondary);
+  animation: bounce 1.5s infinite;
+}
+
+.hero-scroll svg:first-child {
+  opacity: 0.4;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(6px); }
+}

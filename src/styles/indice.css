@@ -1,0 +1,75 @@
+/* Sección índice */
+.indice {
+  padding: 5rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Títulos reutilizables — los usaremos en todas las secciones */
+.seccion-titulo {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.seccion-subtitulo {
+  font-size: 15px;
+  color: var(--text-secondary);
+  margin-bottom: 3rem;
+}
+
+/* Grid de cards */
+.indice-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+/* Card individual */
+.indice-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 2rem 1rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: border-color 0.2s, transform 0.2s;
+  text-align: center;
+}
+
+.indice-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+}
+
+/* Ícono */
+.indice-icono {
+  color: var(--accent);
+}
+
+/* Nombre de la sección */
+.indice-nombre {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .indice-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .indice-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Centra el último card si queda solo en su fila */
+.indice-card:last-child:nth-child(3n+1) {
+  grid-column: 2;
+}

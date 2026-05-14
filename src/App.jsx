@@ -6,6 +6,7 @@ import Objetivos from './components/Objetivos'
 import Evidencias from './components/Evidencias'
 import Reflexion from './components/Reflexion'
 import Conclusion from './components/Conclusion'
+import AcercaDe from './components/AcercaDe'
 
 function App(){
   return(
@@ -18,6 +19,7 @@ function App(){
       <Evidencias />
       <Reflexion />
       <Conclusion />
+      <AcercaDe />
     </div>
   )
 }

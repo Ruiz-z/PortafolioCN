@@ -1,0 +1,21 @@
+/* Sección introducción */
+.introduccion {
+  padding: 5rem 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.introduccion-content {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+/* Párrafos con espacio entre ellos */
+.introduccion-texto p {
+  color: var(--text-secondary);
+  margin-bottom: 1.25rem;
+  line-height: 1.8;
+}
+
+.introduccion-texto strong {
+  color: var(--text-primary);
+}

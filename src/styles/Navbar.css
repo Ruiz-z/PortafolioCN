@@ -65,6 +65,21 @@
   color: var(--text-secondary);
 }
 
+/* Botón Anexos en navbar — mismo estilo que los links */
+.navbar-anexos-btn {
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: color 0.2s;
+  font-family: 'Inter', sans-serif;
+}
+
+.navbar-anexos-btn:hover {
+  color: var(--accent);
+}
+
 /* Responsive: mostrar hamburguesa en móvil */
 @media (max-width: 768px) {
   .navbar-links {

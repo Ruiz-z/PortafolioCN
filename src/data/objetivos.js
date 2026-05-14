@@ -1,12 +1,27 @@
-// Objetivo general del curso
+// Objetivo general extraído de la intención didáctica del programa
 export const objetivoGeneral =
-  "La asignatura Computo en la Nube se centra en el diseño, implementación y administración de arquitecturas DevOps, así como en la utilización de plataformas de computación en la nube para soportar dichas arquitecturas.";
+  "Desarrollar las competencias necesarias para responder a la pregunta: ¿Cómo es desarrollar, implementar y administrar aplicaciones en una plataforma de computación en la nube? Aplicando los conceptos, arquitecturas, herramientas y consideraciones de seguridad del cómputo en la nube.";
 
-// Objetivos específicos con su ícono asociado
+// Objetivos específicos basados en las 5 unidades del temario
 export const objetivosEspecificos = [
-  { icono: "cloud",   texto: "Introducción y fundamentos de cómputo en la nube" },
-  { icono: "server",  texto: "Arquitectura de la nube" },
-  { icono: "shield",  texto: "Consideraciones para el desarrollo" },
-  { icono: "code",    texto: "Seguridad" },
-  { icono: "layout",  texto: "Diseñar y desarrollar una aplicación informática en la nube." },
+  {
+    icono: "cloud",
+    texto: "Describir las principales características del cómputo en la nube, sus modelos de implementación (pública, privada, híbrida) y tipos de servicio (SaaS, PaaS, IaaS).",
+  },
+  {
+    icono: "server",
+    texto: "Conocer las plataformas de computación en la nube (AWS, Azure, Google Cloud, IBM) y sus herramientas de gestión y motores de base de datos.",
+  },
+  {
+    icono: "code",
+    texto: "Aplicar los aspectos y herramientas necesarios para el desarrollo de aplicaciones en la nube, distinguiendo el desarrollo cloud del desarrollo tradicional.",
+  },
+  {
+    icono: "shield",
+    texto: "Identificar los riesgos y vulnerabilidades de seguridad en la nube, así como las estrategias y técnicas de gestión de identidad para mitigarlos.",
+  },
+  {
+    icono: "layout",
+    texto: "Diseñar e implementar una aplicación informática en la nube utilizando plataformas open source o de licencia como caso de estudio integrador.",
+  },
 ];

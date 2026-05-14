@@ -1,0 +1,32 @@
+/* Sección conclusión */
+.conclusion {
+  padding: 5rem 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.conclusion-content {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.conclusion-bloque {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.conclusion-bloque p {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+/* Frase de cierre destacada */
+.conclusion-cierre {
+  font-size: 17px !important;
+  color: var(--text-primary) !important;
+  font-style: italic;
+  border-left: 3px solid var(--accent);
+  padding-left: 1.25rem;
+}

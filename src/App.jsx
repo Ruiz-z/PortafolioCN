@@ -5,6 +5,7 @@ import Introduccion from './components/Introduccion'
 import Objetivos from './components/Objetivos'
 import Evidencias from './components/Evidencias'
 import Reflexion from './components/Reflexion'
+import Conclusion from './components/Conclusion'
 
 function App(){
   return(
@@ -16,6 +17,7 @@ function App(){
       <Objetivos />
       <Evidencias />
       <Reflexion />
+      <Conclusion />
     </div>
   )
 }

@@ -1,0 +1,70 @@
+.objetivos {
+  padding: 5rem 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.objetivos-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Objetivo general */
+.objetivo-general {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.objetivo-general h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+.objetivo-general p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+/* Grid de objetivos específicos */
+.objetivos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.objetivo-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.5rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: border-color 0.2s;
+}
+
+.objetivo-card:hover {
+  border-color: var(--accent);
+}
+
+.objetivo-icono {
+  color: var(--accent);
+}
+
+.objetivo-card p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .objetivos-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .objetivos-grid { grid-template-columns: 1fr; }
+}

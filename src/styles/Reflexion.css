@@ -1,0 +1,65 @@
+/* Sección reflexión */
+.reflexion {
+  padding: 5rem 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.reflexion-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Grid de cards */
+.reflexion-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+}
+
+/* Card normal */
+.reflexion-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  transition: border-color 0.2s;
+}
+
+.reflexion-card:hover {
+  border-color: var(--accent);
+}
+
+.reflexion-card h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+.reflexion-card p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* Card destacada — ocupa todo el ancho */
+.reflexion-card--destacada {
+  grid-column: 1 / -1;
+  border-color: rgba(0, 180, 216, 0.3);
+  background-color: rgba(0, 180, 216, 0.05);
+}
+
+.reflexion-card--destacada h3 {
+  font-size: 16px;
+}
+
+.reflexion-card--destacada p {
+  font-size: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .reflexion-grid { grid-template-columns: 1fr; }
+  .reflexion-card--destacada { grid-column: auto; }
+}

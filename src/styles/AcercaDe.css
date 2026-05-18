@@ -1,0 +1,52 @@
+/* Sección acerca de */
+.acerca {
+  padding: 5rem 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.acerca-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.acerca-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+/* Card de dato */
+.acerca-card {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: border-color 0.2s;
+}
+
+.acerca-card:hover {
+  border-color: var(--accent);
+}
+
+.acerca-icono {
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.acerca-label {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-bottom: 0.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.acerca-valor {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-primary);
+}

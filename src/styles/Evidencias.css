@@ -179,12 +179,6 @@
   margin-left: 1rem;
 }
 
-.slide-bloques {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.25rem;
-}
-
 .slide-bloque h4 {
   font-size: 11px;
   font-weight: 600;
@@ -279,7 +273,6 @@
 @media (max-width: 768px) {
   .unidades-grid { grid-template-columns: repeat(2, 1fr); }
   .unidad-card:last-child:nth-child(3n+1) { grid-column: auto; }
-  .slide-bloques { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 480px) {

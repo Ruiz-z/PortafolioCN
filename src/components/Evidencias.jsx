@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Cloud, Server, Layers, Shield, Cpu, ChevronLeft, ChevronRight, ArrowLeft, Link, FileText, Image } from 'lucide-react'
+import { Cloud, Server, Layers, Shield, Cpu, ChevronLeft, ChevronRight, ArrowLeft, Link, FileText } from 'lucide-react'
 import { unidades } from '../data/evidencias'
 import '../styles/Evidencias.css'
 
@@ -7,7 +7,7 @@ import '../styles/Evidencias.css'
 const iconos = { cloud: Cloud, server: Server, layers: Layers, shield: Shield, cpu: Cpu }
 
 // Íconos para anexos
-const iconoAnexo = { link: Link, pdf: FileText, captura: Image }
+const iconoAnexo = { link: Link, pdf: FileText }
 
 function Evidencias() {
   const [unidadActiva, setUnidadActiva] = useState(null) // null = vista grid

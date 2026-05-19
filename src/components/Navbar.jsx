@@ -3,12 +3,14 @@ import { Menu, X } from 'lucide-react'
 import '../styles/Navbar.css'
 
 const navLinks = [
-  { label: 'Inicio',     href: '#hero' },
-  { label: 'Índice',     href: '#indice' },
-  { label: 'Objetivos',  href: '#objetivos' },
-  { label: 'Evidencias', href: '#evidencias' },
-  { label: 'Reflexión',  href: '#reflexion' },
-  { label: 'Acerca de',  href: '#acerca' },
+  { label: 'Inicio',        href: '#hero' },
+  { label: 'Índice',        href: '#indice' },
+  { label: 'Introducción',  href: '#introduccion' },
+  { label: 'Objetivos',     href: '#objetivos' },
+  { label: 'Evidencias',    href: '#evidencias' },
+  { label: 'Reflexión',     href: '#reflexion' },
+  { label: 'Conclusión',    href: '#conclusion' },
+  { label: 'Acerca de',     href: '#acerca' },
 ]
 
 function Navbar({ onAbrirAnexos }) {

@@ -1,5 +1,5 @@
-import { Cloud, Target, BookOpen, Brain, MessageSquare, User, Paperclip } from 'lucide-react'
-import '../styles/Indice.css'
+import { Cloud, Target, BookOpen, Brain, MessageSquare, User } from 'lucide-react'
+import '../styles/indice.css'
 
 // Secciones del portafolio con su ícono y ancla
 const secciones = [
@@ -9,7 +9,6 @@ const secciones = [
   { icono: <Brain size={28} />,        nombre: 'Reflexión Final', href: '#reflexion' },
   { icono: <MessageSquare size={28} />,nombre: 'Conclusión',      href: '#conclusion' },
   { icono: <User size={28} />,         nombre: 'Acerca de mí',   href: '#acerca' },
-  { icono: <Paperclip size={28} />,    nombre: 'Anexos',          href: '#anexos' },
 ]
 
 function Indice() {

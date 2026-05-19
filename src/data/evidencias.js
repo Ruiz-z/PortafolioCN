@@ -166,7 +166,7 @@ export const unidades = [
     actividades: [
       {
         id: 1,
-        titulo: "4.1 Práctica de seguridad informática — escalada de privilegios",
+        titulo: "4.1 Práctica de seguridad informática: escalada de privilegios",
         fecha: "05/03/2026",
         descripcion: "Ejercicio práctico de escalada de privilegios en entornos Linux, identificando vulnerabilidades de configuración y permisos que permiten elevar privilegios.",
         aprendizaje: "Las configuraciones incorrectas de permisos, archivos SUID mal asignados y servicios con privilegios excesivos son vectores comunes de escalada de privilegios.",

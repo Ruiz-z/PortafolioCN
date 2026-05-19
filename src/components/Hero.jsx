@@ -5,7 +5,7 @@ function Hero() {
   return (
     <section id="hero" className="hero">
       <div className="hero-content">
-        <p className="hero-institucion">TecNM — Instituto Tecnologico de saltillo</p>
+        <p className="hero-institucion">TecNM · Instituto Tecnológico de Saltillo</p>
         <h1 className="hero-nombre">Mauro Rodrigo Ruiz Alvarez</h1>
         <h2 className="hero-materia">Cómputo en la Nube</h2>
         <div className="hero-meta">

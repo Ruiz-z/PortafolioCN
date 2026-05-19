@@ -43,7 +43,7 @@ function Reflexion() {
             <p>
               Desplegar una aplicación real en la nube y verla funcionar
               desde cualquier dispositivo fue el momento que más me marcó.
-              Entendí que la nube no es solo tecnología — es una forma
+              Entendí que la nube no es solo tecnología, es una forma
               diferente de pensar el software.
             </p>
           </div>

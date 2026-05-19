@@ -1,38 +1,56 @@
-import { User, Hash, GraduationCap, Building, Calendar } from 'lucide-react'
+import { X, GraduationCap, Calendar, Hash, Building, BookOpen } from 'lucide-react'
 import '../styles/AcercaDe.css'
 
 // Datos del estudiante
 const datos = [
-  { icono: User,          label: 'Nombre',    valor: 'Mauro Rodrigo Ruiz Alvarez' },
-  { icono: Hash,          label: 'No. Control', valor: '22050727' },
-  { icono: GraduationCap, label: 'Carrera',   valor: 'Ingeniería en Sistemas Computacionales' },
-  { icono: Calendar,      label: 'Semestre',  valor: 'Enero – Junio 2026' },
-  { icono: Building,      label: 'Institución', valor: 'TecNM — Campus Saltillo' },
+  { icono: GraduationCap, label: 'Carrera',        valor: 'Ingeniería en Sistemas Computacionales' },
+  { icono: BookOpen,      label: 'Materia',         valor: 'Cómputo en la Nube' },
+  { icono: Calendar,      label: 'Semestre',        valor: 'Enero – Junio 2026' },
+  { icono: Hash,          label: 'No. de Control',  valor: '22050727' },
+  { icono: Building,      label: 'Institución',     valor: 'TecNM Campus Saltillo' },
 ]
 
-function AcercaDe() {
+// Panel lateral deslizable — se abre desde el navbar o el índice
+function AcercaDe({ onCerrar }) {
   return (
-    <section id="acerca" className="acerca">
-      <div className="acerca-content">
-        <h2 className="seccion-titulo">Acerca de mí</h2>
-        <p className="seccion-subtitulo">Datos del estudiante</p>
+    <div className="perfil-panel">
 
-        <div className="acerca-grid">
-          {datos.map((dato, i) => {
-            const Icono = dato.icono
-            return (
-              <div key={i} className="acerca-card">
-                <span className="acerca-icono"><Icono size={20} /></span>
-                <div>
-                  <p className="acerca-label">{dato.label}</p>
-                  <p className="acerca-valor">{dato.valor}</p>
-                </div>
-              </div>
-            )
-          })}
-        </div>
+      {/* Botón cerrar */}
+      <button className="perfil-cerrar" onClick={onCerrar}>
+        <X size={20} />
+      </button>
+
+      {/* Foto de perfil circular */}
+      <div className="perfil-avatar">
+        <img src="/sobre mi.jpg" alt="Mauro Rodrigo Ruiz Alvarez" />
       </div>
-    </section>
+
+      {/* Nombre y rol */}
+      <div className="perfil-header">
+        <h2 className="perfil-nombre">Mauro Rodrigo Ruiz Alvarez</h2>
+        <span className="perfil-badge">Estudiante ITS</span>
+      </div>
+
+      {/* Separador */}
+      <div className="perfil-divider" />
+
+      {/* Lista de datos */}
+      <div className="perfil-datos">
+        {datos.map((dato, i) => {
+          const Icono = dato.icono
+          return (
+            <div key={i} className="perfil-item">
+              <span className="perfil-icono"><Icono size={16} /></span>
+              <div>
+                <p className="perfil-label">{dato.label}</p>
+                <p className="perfil-valor">{dato.valor}</p>
+              </div>
+            </div>
+          )
+        })}
+      </div>
+
+    </div>
   )
 }
 

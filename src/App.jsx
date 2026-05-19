@@ -9,6 +9,7 @@ import Reflexion from './components/Reflexion'
 import Conclusion from './components/Conclusion'
 import AcercaDe from './components/AcercaDe'
 import Anexos from './components/Anexos'
+import Footer from './components/Footer'
 
 function App() {
   const [anexosAbierto, setAnexosAbierto] = useState(false)
@@ -24,6 +25,7 @@ function App() {
       <Reflexion />
       <Conclusion />
       <AcercaDe />
+      <Footer />
 
       {/* Modal de anexos */}
       {anexosAbierto && <Anexos onCerrar={() => setAnexosAbierto(false)} />}

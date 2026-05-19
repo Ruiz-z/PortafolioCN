@@ -1,0 +1,18 @@
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.footer-copy {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.footer-sub {
+  font-size: 13px;
+  color: var(--border);
+}

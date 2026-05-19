@@ -2,7 +2,7 @@
 
 Portafolio académico desarrollado para la materia **Cómputo en la Nube** del Instituto Tecnológico de Saltillo (TecNM). Documenta las actividades, prácticas y aprendizajes del semestre Enero–Junio 2026.
 
-**Sitio en vivo:** [Ver portafolio](https://portafolio-cn.vercel.app)
+**Sitio en vivo:** [Ver portafolio]( https://portafolio-cn-theta.vercel.app/)
 
 ---
 

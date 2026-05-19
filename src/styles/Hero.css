@@ -71,3 +71,17 @@
   0%, 100% { transform: translateY(0); }
   50%       { transform: translateY(6px); }
 }
+
+/* Responsive — tablet */
+@media (max-width: 768px) {
+  .hero-nombre { font-size: 36px; }
+  .hero-materia { font-size: 22px; }
+}
+
+/* Responsive — móvil */
+@media (max-width: 480px) {
+  .hero-nombre { font-size: 28px; }
+  .hero-materia { font-size: 18px; }
+  .hero-meta { flex-direction: column; gap: 0.4rem; }
+  .hero-separador { display: none; }
+}

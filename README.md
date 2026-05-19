@@ -1,16 +1,65 @@
-# React + Vite
+# Portafolio de Evidencias — Cómputo en la Nube
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portafolio académico desarrollado para la materia **Cómputo en la Nube** del Instituto Tecnológico de Saltillo (TecNM). Documenta las actividades, prácticas y aprendizajes del semestre Enero–Junio 2026.
 
-Currently, two official plugins are available:
+**Sitio en vivo:** [Ver portafolio](https://portafolio-cn.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ¿Qué es esto?
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Es un sitio web de una sola página (SPA) que reúne todas las evidencias del curso organizadas por unidad. Cada unidad tiene un carrusel con sus actividades, donde puedes ver la descripción, el aprendizaje obtenido, la reflexión y el PDF correspondiente.
 
-## Expanding the ESLint configuration
+No es un portafolio de trabajo — es un portafolio escolar que documenta el proceso de aprendizaje a lo largo del semestre.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Contenido
+
+El portafolio cubre 5 unidades del curso:
+
+- **Unidad 1** — Introducción y fundamentos del cómputo en la nube
+- **Unidad 2** — Arquitectura de la nube (AWS, Azure, Google Cloud, GitHub)
+- **Unidad 3** — Consideraciones para el desarrollo (microservicios, DevOps)
+- **Unidad 4** — Seguridad en la nube (9 prácticas)
+- **Unidad 5** — Diseño y desarrollo de aplicaciones en la nube
+
+## Stack
+
+- React 19 + Vite
+- CSS plano (un archivo por componente, sin frameworks)
+- lucide-react para íconos
+- Sin TypeScript, sin Tailwind, sin Redux
+
+## Correrlo localmente
+
+```bash
+git clone https://github.com/Ruiz-z/PortafolioCN.git
+cd PortafolioCN
+pnpm install
+pnpm run dev
+```
+
+Para generar el build de producción:
+
+```bash
+pnpm run build
+```
+
+## Estructura
+
+```
+src/
+├── components/   # Un componente por sección
+├── data/         # evidencias.js, objetivos.js, anexos.js
+└── styles/       # Un .css por componente
+public/
+└── unidades/     # PDFs de cada actividad por unidad
+```
+
+Si quieres agregar o editar actividades, solo modifica `src/data/evidencias.js`. Cada entrada tiene título, fecha, descripción, aprendizaje, reflexión y anexos.
+
+## Autor
+
+**Mauro Rodrigo Ruiz Alvarez**(Ruiz-z y MauroRUiz04) 
+· No. Control 22050727  
+Ingeniería en Sistemas Computacionales · TecNM Campus Saltillo  
+Profesor: Ing. Miguel Salazar del Bosque

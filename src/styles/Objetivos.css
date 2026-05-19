@@ -29,12 +29,21 @@
   line-height: 1.8;
 }
 
-/* Grid de objetivos específicos */
+/* Grid de objetivos específicos — 6 columnas internas para centrar la última fila */
 .objetivos-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 1rem;
 }
+
+/* Cada card ocupa 2 de las 6 columnas */
+.objetivo-card {
+  grid-column: span 2;
+}
+
+/* Las últimas 2 cards se posicionan en columnas 2 y 4 para quedar centradas */
+.objetivo-card:nth-child(4) { grid-column: 2 / span 2; }
+.objetivo-card:nth-child(5) { grid-column: 4 / span 2; }
 
 .objetivo-card {
   display: flex;
@@ -61,10 +70,15 @@
   line-height: 1.6;
 }
 
+/* Tablet: vuelve a 2 columnas normales */
 @media (max-width: 768px) {
   .objetivos-grid { grid-template-columns: repeat(2, 1fr); }
+  .objetivo-card,
+  .objetivo-card:nth-child(4),
+  .objetivo-card:nth-child(5) { grid-column: span 1; }
 }
 
+/* Móvil: una columna */
 @media (max-width: 480px) {
   .objetivos-grid { grid-template-columns: 1fr; }
 }

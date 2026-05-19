@@ -18,7 +18,7 @@ function Conclusion() {
           <p>
             El recorrido por las cinco unidades del curso me dejó no solo
             conocimientos técnicos, sino también una mentalidad orientada a la
-            escalabilidad, la seguridad y la eficiencia — valores fundamentales
+            escalabilidad, la seguridad y la eficiencia, valores fundamentales
             en el desarrollo de software moderno.
           </p>
           <p className="conclusion-cierre">

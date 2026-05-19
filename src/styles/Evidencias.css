@@ -9,18 +9,20 @@
   margin: 0 auto;
 }
 
-/* ── Grid de unidades ── */
+/* ── Grid de unidades — 6 columnas internas para centrar la última fila ── */
 .unidades-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 1.25rem;
   margin-top: 2.5rem;
 }
 
-/* Centrar última card si queda sola */
-.unidad-card:last-child:nth-child(3n+1) {
-  grid-column: 2;
-}
+/* Cada card ocupa 2 de las 6 columnas */
+.unidad-card { grid-column: span 2; }
+
+/* Las últimas 2 cards se centran en columnas 2 y 4 */
+.unidad-card:nth-child(4) { grid-column: 2 / span 2; }
+.unidad-card:nth-child(5) { grid-column: 4 / span 2; }
 
 /* Card de unidad */
 .unidad-card {
@@ -179,6 +181,22 @@
   margin-left: 1rem;
 }
 
+/* Número de actividad dentro del slide */
+.slide-num {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent);
+  background-color: rgba(0, 180, 216, 0.1);
+  border: 1px solid rgba(0, 180, 216, 0.3);
+  border-radius: 6px;
+  padding: 0.2rem 0.6rem;
+}
+
+/* Separación entre bloques de descripción, aprendizaje y reflexión */
+.slide-bloque {
+  margin-bottom: 1.25rem;
+}
+
 .slide-bloque h4 {
   font-size: 11px;
   font-weight: 600;
@@ -272,9 +290,22 @@
 /* Responsive */
 @media (max-width: 768px) {
   .unidades-grid { grid-template-columns: repeat(2, 1fr); }
-  .unidad-card:last-child:nth-child(3n+1) { grid-column: auto; }
+  .unidad-card,
+  .unidad-card:nth-child(4),
+  .unidad-card:nth-child(5) { grid-column: span 1; }
+
+  /* Carrusel: header en columna para que no quede apretado */
+  .carrusel-header {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .carrusel-contador { align-self: flex-end; }
 }
 
 @media (max-width: 480px) {
   .unidades-grid { grid-template-columns: 1fr; }
+
+  /* Botones del carrusel más compactos en móvil */
+  .carrusel-btn { font-size: 13px; padding: 0.4rem 0.6rem; }
+  .carrusel-slide { padding: 1.25rem; }
 }

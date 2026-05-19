@@ -12,23 +12,31 @@ import Anexos from './components/Anexos'
 import Footer from './components/Footer'
 
 function App() {
+  // Estado para el modal de anexos
   const [anexosAbierto, setAnexosAbierto] = useState(false)
+  // Estado para el panel lateral de perfil
+  const [acercaAbierto, setAcercaAbierto] = useState(false)
 
   return (
     <div>
-      <Navbar onAbrirAnexos={() => setAnexosAbierto(true)} />
+      <Navbar
+        onAbrirAnexos={() => setAnexosAbierto(true)}
+        onAbrirAcerca={() => setAcercaAbierto(true)}
+      />
       <Hero />
-      <Indice />
+      <Indice onAbrirAcerca={() => setAcercaAbierto(true)} />
       <Introduccion />
       <Objetivos />
       <Evidencias />
       <Reflexion />
       <Conclusion />
-      <AcercaDe />
       <Footer />
 
       {/* Modal de anexos */}
       {anexosAbierto && <Anexos onCerrar={() => setAnexosAbierto(false)} />}
+
+      {/* Panel lateral de perfil */}
+      {acercaAbierto && <AcercaDe onCerrar={() => setAcercaAbierto(false)} />}
     </div>
   )
 }

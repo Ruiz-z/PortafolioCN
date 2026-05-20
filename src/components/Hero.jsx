@@ -4,6 +4,13 @@ import '../styles/Hero.css'
 function Hero() {
   return (
     <section id="hero" className="hero">
+
+      {/* Logos institucionales — solo visibles en la portada */}
+      <div className="hero-logos">
+        <img src="/tecnm.png" alt="TecNM" className="hero-logo hero-logo--tecnm" />
+        <img src="/its.png"   alt="ITS"   className="hero-logo hero-logo--its" />
+      </div>
+
       <div className="hero-content">
         <p className="hero-institucion">TecNM · Instituto Tecnológico de Saltillo</p>
         <h1 className="hero-nombre">Mauro Rodrigo Ruiz Alvarez</h1>
@@ -16,10 +23,11 @@ function Hero() {
           <span>Profesor: Ing. Miguel Salazar del Bosque</span>
         </div>
         <a href="#indice" className="hero-scroll">
-            <ChevronDown size={30}/>
-            <ChevronDown size={30}/>
+          <ChevronDown size={30}/>
+          <ChevronDown size={30}/>
         </a>
       </div>
+
     </section>
   )
 }
